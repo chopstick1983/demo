@@ -12,7 +12,22 @@
 @implementation CalculatorBrain
 - (void)performWaitingOpertion
 {
-
+    if([@"+" isEqualToString:waitingOperation])
+    {
+        operand = waitingOperand + operand;
+    }
+    else if([@"-" isEqualToString:waitingOperation])
+    {
+        operand = waitingOperand - operand;
+    }
+    else if([@"*" isEqualToString:waitingOperation])
+    {
+        operand = waitingOperand * operand;
+    }
+    else if([@"/" isEqualToString:waitingOperation])
+    {
+        operand = waitingOperand / operand;
+    }
 }
 
 - (void)setOperand:(double)anOperand
