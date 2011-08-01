@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'InstanceAndClass' target in the 'InstanceAndClass' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif
