@@ -20,9 +20,9 @@ int main (int argc, const char * argv[])
     [cls setEye:123];
     
     NSLog(@"Hello, World!");
-    NSLog([NSString stringWithFormat:@"%d", [cls eye]]);
+   
     
-    
+    NSLog(@"%d",[cls eye]);
     
     [pool drain];
     return 0;

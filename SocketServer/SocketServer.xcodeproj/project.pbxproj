@@ -1,0 +1,224 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5793E4C413EAE70700FB30A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5793E4C313EAE70700FB30A0 /* Foundation.framework */; };
+		5793E4C713EAE70700FB30A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5793E4C613EAE70700FB30A0 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5793E4BD13EAE70700FB30A0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5793E4BF13EAE70700FB30A0 /* SocketServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SocketServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		5793E4C313EAE70700FB30A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5793E4C613EAE70700FB30A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5793E4C913EAE70700FB30A0 /* SocketServer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SocketServer-Prefix.pch"; sourceTree = "<group>"; };
+		5793E4CA13EAE70700FB30A0 /* SocketServer.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = SocketServer.1; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5793E4BC13EAE70700FB30A0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5793E4C413EAE70700FB30A0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5793E4B413EAE70700FB30A0 = {
+			isa = PBXGroup;
+			children = (
+				5793E4C513EAE70700FB30A0 /* SocketServer */,
+				5793E4C213EAE70700FB30A0 /* Frameworks */,
+				5793E4C013EAE70700FB30A0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5793E4C013EAE70700FB30A0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5793E4BF13EAE70700FB30A0 /* SocketServer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5793E4C213EAE70700FB30A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5793E4C313EAE70700FB30A0 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5793E4C513EAE70700FB30A0 /* SocketServer */ = {
+			isa = PBXGroup;
+			children = (
+				5793E4C613EAE70700FB30A0 /* main.m */,
+				5793E4CA13EAE70700FB30A0 /* SocketServer.1 */,
+				5793E4C813EAE70700FB30A0 /* Supporting Files */,
+			);
+			path = SocketServer;
+			sourceTree = "<group>";
+		};
+		5793E4C813EAE70700FB30A0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5793E4C913EAE70700FB30A0 /* SocketServer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5793E4BE13EAE70700FB30A0 /* SocketServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5793E4CD13EAE70700FB30A0 /* Build configuration list for PBXNativeTarget "SocketServer" */;
+			buildPhases = (
+				5793E4BB13EAE70700FB30A0 /* Sources */,
+				5793E4BC13EAE70700FB30A0 /* Frameworks */,
+				5793E4BD13EAE70700FB30A0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SocketServer;
+			productName = SocketServer;
+			productReference = 5793E4BF13EAE70700FB30A0 /* SocketServer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5793E4B613EAE70700FB30A0 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 5793E4B913EAE70700FB30A0 /* Build configuration list for PBXProject "SocketServer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5793E4B413EAE70700FB30A0;
+			productRefGroup = 5793E4C013EAE70700FB30A0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5793E4BE13EAE70700FB30A0 /* SocketServer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5793E4BB13EAE70700FB30A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5793E4C713EAE70700FB30A0 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5793E4CB13EAE70700FB30A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5793E4CC13EAE70700FB30A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5793E4CE13EAE70700FB30A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocketServer/SocketServer-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5793E4CF13EAE70700FB30A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SocketServer/SocketServer-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5793E4B913EAE70700FB30A0 /* Build configuration list for PBXProject "SocketServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5793E4CB13EAE70700FB30A0 /* Debug */,
+				5793E4CC13EAE70700FB30A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5793E4CD13EAE70700FB30A0 /* Build configuration list for PBXNativeTarget "SocketServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5793E4CE13EAE70700FB30A0 /* Debug */,
+				5793E4CF13EAE70700FB30A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5793E4B613EAE70700FB30A0 /* Project object */;
+}
