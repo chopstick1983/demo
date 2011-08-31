@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5781F703140E79DA00A8D396 /* Projectile.png in Resources */ = {isa = PBXBuildFile; fileRef = 5781F702140E79DA00A8D396 /* Projectile.png */; };
 		57B6D1CD140687D400C4C580 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B6D1CC140687D400C4C580 /* QuartzCore.framework */; };
 		57B6D1CF140687D400C4C580 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B6D1CE140687D400C4C580 /* OpenGLES.framework */; };
 		57B6D1D1140687D400C4C580 /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57B6D1D0140687D400C4C580 /* OpenAL.framework */; };
@@ -128,6 +129,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5781F702140E79DA00A8D396 /* Projectile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Projectile.png; path = Resources/Projectile.png; sourceTree = "<group>"; };
 		57B6D1C8140687D400C4C580 /* SimpleGameSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleGameSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57B6D1CC140687D400C4C580 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		57B6D1CE140687D400C4C580 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -439,6 +441,7 @@
 		57B6D1DD140687D400C4C580 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5781F702140E79DA00A8D396 /* Projectile.png */,
 				57B6D33F1406901600C4C580 /* Player.png */,
 				57B6D3401406901600C4C580 /* Target.png */,
 				57B6D33D14068E2D00C4C580 /* smallbird.png */,
@@ -826,6 +829,7 @@
 				57B6D33E14068E2D00C4C580 /* smallbird.png in Resources */,
 				57B6D3411406901600C4C580 /* Player.png in Resources */,
 				57B6D3421406901600C4C580 /* Target.png in Resources */,
+				5781F703140E79DA00A8D396 /* Projectile.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1027,6 +1031,7 @@
 				57B6D33C140687D600C4C580 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

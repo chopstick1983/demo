@@ -43,12 +43,14 @@
         CCSprite *player = [CCSprite spriteWithFile:@"player.png" rect:CGRectMake(0, 0, 27, 40)];
         player.position = ccp(player.contentSize.width/2, size.height/2);
         [self addChild:player];
-        [self schedule:@selector(gameLogic:) interval:0.5];
+        [self schedule:@selector(gameLogic:) interval:2];
 		// position the label on the center of the screen
 		//label.position =  ccp( size.width /2 , size.height/2 );
 		
 		// add the label as a child to this Layer
 		//[self addChild: label];
+        
+        self.isTouchEnabled = YES;
 	}
 	return self;
 }
@@ -87,6 +89,51 @@
 -(void)gameLogic:(ccTime)dt {
     [self addTarget];
 }
+
+-(void)ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    // Choose one of the touches to work with
+    UITouch *touch = [touches anyObject];
+    CGPoint location = [touch locationInView:[touch view]];
+    location = [[CCDirector sharedDirector] convertToGL:location];
+    
+    // Set up initial location of projectile
+    CGSize winSize = [[CCDirector sharedDirector] winSize];
+    CCSprite *projectile = [CCSprite spriteWithFile:@"Projectile.png" 
+                                               rect:CGRectMake(0, 0, 20, 20)];
+    projectile.position = ccp(20, winSize.height/2);
+    
+    
+    // Determine offset of location to projectile
+    int offX = location.x - projectile.position.x;
+    int offY = location.y - projectile.position.y;
+    
+    // Bail out if we are shooting down or backwards
+    if (offX <= 0) return;
+    
+    // Ok to add now - we've double checked position
+    [self addChild:projectile];
+    
+    // Determine where we wish to shoot the projectile to
+    int realX = winSize.width + (projectile.contentSize.width/2);
+    float ratio = (float) offY / (float) offX;
+    int realY = (realX * ratio) + projectile.position.y;
+    CGPoint realDest = ccp(realX, realY);
+    
+    // Determine the length of how far we're shooting
+    int offRealX = realX - projectile.position.x;
+    int offRealY = realY - projectile.position.y;
+    float length = sqrtf((offRealX*offRealX)+(offRealY*offRealY));
+    float velocity = 480/1; // 480pixels/1sec
+    float realMoveDuration = length/velocity;
+    
+    // Move projectile to actual endpoint
+    [projectile runAction:[CCSequence actions:
+                           [CCMoveTo actionWithDuration:realMoveDuration position:realDest],
+                           [CCCallFuncN actionWithTarget:self selector:@selector(spriteMoveFinished:)],
+                           nil]];
+}
+
 
 // on "dealloc" you need to release all your retained objects
 - (void) dealloc
